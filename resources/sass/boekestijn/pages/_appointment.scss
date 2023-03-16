@@ -1,0 +1,60 @@
+#show {
+    &.appointment {
+        .form-blok {
+            background: #FFFFFF;
+            padding: 20px 20px;
+            margin-top: 40px;
+            border-radius: 5px;
+
+            form {
+                margin-top: 20px;
+
+                .form-control, textarea {
+                    background: #f5f5f5;
+                    border-radius: 5px;
+                    margin: 10px 0;
+                }
+
+                .btn {
+                    margin-top: 15px;
+                }
+
+                .form-check-input {
+                    width: 18px !important;
+                    border-radius: 5px;
+                }
+
+                .form-check-label {
+                    margin-left: 20px;
+                }
+
+                .bottom {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #show {
+        &.appointment {
+            .form-blok {
+                padding: 20px 40px;
+
+                form {
+                    margin-top: 40px;
+
+                    .btn {
+                        float: right;
+                        margin-top: 0;
+                    }
+
+                    .bottom {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+#cars {
+    background: #FCFCFC;
+    padding: 50px 0 50px;
+    h1 {
+        display: inline-block;
+        font-size: 30px;
+    }
+    .amount {
+        display: inline-block;
+        color: rgba(0, 44, 81, 0.5);
+        font-size: 20px;
+        line-height: 40px;
+        margin-left: 15px;
+    }
+    .sort {
+        margin-bottom: 30px;
+        label {
+            margin-right: 15px;
+        }
+        select {
+            appearance: none;
+            line-height: 50px;
+            height: auto;
+            width: 215px;
+            padding: 0 15px;
+            border: 1px solid rgba(0, 44, 81, 0.15);
+            background: #fff url('/img/select.svg') no-repeat calc(100% - 15px) center;
+            background-size: 10px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .properties,
+    .projects {
+        .property-holder,
+        .project-holder {
+            margin-bottom: 30px;
+        }
+    }
+
+    nav {
+        svg {
+            width: 20px;
+        }
+
+        .flex-1 {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    #cars{
+        .sort {
+            float: right;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #cars {
+        h1 {
+            display: inline-block;
+            font-size: 50px;
+        }
+        .amount {
+            font-size: 30px;
+            line-height: 50px;
+        }
+        .properties {
+            margin-top: 25px;
+        }
+    }
+}

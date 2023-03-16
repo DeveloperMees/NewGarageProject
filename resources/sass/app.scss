@@ -1,0 +1,35 @@
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Node
+@import '../../node_modules/pikaday/css/pikaday.css';
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/luminous-lightbox/dist/luminous-basic.min.css";
+
+// Partials
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/hero';
+@import 'partials/icons';
+
+// Global
+@import 'global';
+
+///
+/// Boekestijn
+///
+
+// Pages
+@import "boekestijn/pages/homepage";
+@import "boekestijn/pages/show";
+@import "boekestijn/pages/appointment";
+
+// Partials
+@import "boekestijn/partials/hero";
+
+//Car
+@import "boekestijn/car/car";
+@import "boekestijn/car/index";
+@import "boekestijn/car/show";
+@import "boekestijn/pages/contact";
+

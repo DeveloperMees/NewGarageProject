@@ -1,0 +1,191 @@
+a.car {
+    position: relative;
+    display: block;
+    text-align: center;
+    color: #000531 !important;
+    text-decoration: none;
+    box-shadow: 0px 5px 10px #0000001A;
+    transition: all 0.3s;
+    border-radius: 5px;
+
+    &:hover {
+        box-shadow: 0px 5px 10px #0000002A;
+    }
+
+    figure {
+        .label {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background-color: #18A8E2;
+            color: #FFF;
+            line-height: 40px;
+            font-size: 13px;
+            padding: 0 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 20px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        figcaption {
+            border-radius: 0px 0px 5px 5px;
+            padding: 15px 15px 0 15px;
+            background: #FFF;
+
+            h3 {
+                font-size: 16px;
+                padding-bottom: 0;
+                border-bottom: none;
+                margin-bottom: 5px;
+                color: #2C3146;;
+                font-weight: 700;
+            }
+
+            h4 {
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+
+            .footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-top: 1px solid #EEE;
+                margin-top: 20px;
+                font-size: 10px;
+
+                span {
+                    flex-grow: 1;
+                    padding: 15px 7px;
+                    border-right: 1px solid #EEE;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:last-child {
+                        border-right: 0;
+                    }
+
+                    i {
+                        margin-right: 5px;
+                        color: #18A8E2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// *****************************************************************
+// MD
+// *****************************************************************
+
+@include media-breakpoint-up(md) {
+    a.car {
+        figure {
+            .label {
+                font-size: 12px;
+                padding: 0 15px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+    a.car {
+        position: relative;
+        display: block;
+        text-align: center;
+        color: #000531 !important;
+        text-decoration: none;
+        box-shadow: 0px 5px 10px #0000001A;
+        transition: all 0.3s;
+        border-radius: 5px;
+
+        &:hover {
+            box-shadow: 0px 5px 10px #0000002A;
+        }
+
+        figure {
+            .label {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                background-color: #18A8E2;
+                color: #FFF;
+                line-height: 40px;
+                font-size: 13px;
+                padding: 0 10px;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-radius: 20px;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                border-radius: 5px 5px 0px 0px;
+            }
+
+            figcaption {
+                border-radius: 0px 0px 5px 5px;
+                padding: 15px 15px 0 15px;
+                background: #FFF;
+
+                h3 {
+                    font-size: 20px;
+                    padding-bottom: 5px;
+                    border-bottom: none;
+                    margin-bottom: 5px;
+                    color: #2C3146;;
+                    font-weight: 700;
+                }
+
+                h4 {
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin-bottom: 0;
+                }
+
+                .footer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-top: 1px solid #EEE;
+                    margin-top: 20px;
+                    font-size: 14px;
+
+                    span {
+                        flex-grow: 1;
+                        padding: 15px 10px;
+                        border-right: 1px solid #EEE;
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        justify-content: center;
+
+                        &:last-child {
+                            border-right: 0;
+                        }
+
+                        i {
+                            margin-right: 5px;
+                            color: #18A8E2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
